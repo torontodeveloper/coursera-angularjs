@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html ng-app="LunchCheck">
+<head>
+	<title>LunchCheck App</title>
+	<script src="angular.js"></script>
+	<script src="app.js"></script>
+</head>
+<body>
+<h1>Check Lunch Application</h1>
+<div ng-controller="LunchCheckController">
+<form name="myForm" novalidate>
+<label>Please Enter Food Items List separated by comma(,)</label> <br>
+	<input type="text" name="foodList" ng-model="foodList" required><br>
+	<div>
+		{{message}}
+	</div>
+	<br>
+	<button ng-click="checkIfTooMuch()">Check If Too Much</button>
+</form>
+</div>
+</body>
+</html>
