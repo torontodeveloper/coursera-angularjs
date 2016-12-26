@@ -9,9 +9,8 @@
 <h1>Check Lunch Application</h1>
 <div ng-controller="LunchCheckController">
 <form name="myForm" novalidate>
-<label>Please Enter Food Items List separated by comma(,)</label> <br>
 	<input type="text" name="foodList" ng-model="foodList" required><br>
-	<div>
+	<div style="color:{{msgColor}}">
 		{{message}}
 	</div>
 	<br>
